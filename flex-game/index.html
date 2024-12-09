@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flexbox Game</h1>
+    <div class="arena">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div class="controls">
+        <button onclick="setDirection('row')">Flex Direction: Row</button>
+        <button onclick="setDirection('column')">Flex Direction: Column</button>
+        <button onclick="setJustifyContent('flex-start')">Justify Content: Start</button>
+        <button onclick="setJustifyContent('center')">Justify Content: Center</button>
+        <button onclick="setJustifyContent('space-between')">Justify Content: Space-Between</button>
+        <button onclick="setAlignItems('flex-start')">Align Items: Start</button>
+        <button onclick="setAlignItems('center')">Align Items: Center</button>
+        <button onclick="setAlignItems('flex-end')">Align Items: End</button>
+    </div>
+    <script src="/flex-game/javascript.js"></script>
+</body>
+</html>
