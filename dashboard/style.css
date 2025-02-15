@@ -13,6 +13,10 @@ a {
     color: black;
 }
 
+p {
+    line-height: 0;
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -79,13 +83,124 @@ a {
 }
 
 .container .principal main {
-    background-color: red;
     width: 80%;
     height: 100%;
+    padding: 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .principal main h1 {
+    font-size: 24px;
+    line-height: 0;
+}
+
+.container .principal main .card-info {
+    background-color: #7E3AF2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.container .principal main .card-info a {
+    color: white;
+}
+
+.container .principal main .card-info .esquerda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .principal main .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container .principal main .cards .card {
+    background-color: white;
+    border: 1px solid #e3e5e6;
+    border-radius: 5px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .principal main .cards .card .icone {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .principal main .cards .card .icon1 {
+    background-color: #FEECDC;
+    color: #FD652F;
+}
+
+.container .principal main .cards .card .icon2 {
+    background-color: #DDF8EC;
+    color: #40AF88;
+}
+
+.container .principal main .cards .card .icon3 {
+    background-color: #E0EFFE;
+    color: #3C81F8;
+}
+
+.container .principal main .cards .card .icon4 {
+    background-color: #D5F5F6;
+    color: #0292A0;
+}
+
+.container .principal aside nav ul {
+    padding: 0;
 }
 
 .container .principal aside nav ul li a {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 0 20px;
+    color: gray;
+}
+
+.container .principal aside nav ul li a .esquerda {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .principal aside nav ul li a .ultimo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#ativo {
+    border-left: 5px solid #7E3AF2;
+    color: black;
+}
+
+.container .principal aside button {
+    background-color: #7E3AF2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 40px;
+    cursor: pointer;
 }
