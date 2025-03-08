@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,10 +21,12 @@
                     <div class="campo">
                         <label for="email">E-mail</label>
                         <input type="email" name="email" id="email">
+                        <p class="text-red-500 text-sm hidden">E-mail é obrigatório.</p>
                     </div>
                     <div class="campo">
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" id="senha">
+                        <p class="text-red-500 text-sm hidden">Senha é obrigatória.</p>
                     </div>
                     <div class="links-ajuda">
                         <div class="inputs">
@@ -34,8 +37,8 @@
                     </div>
                 </div>
                 <div class="fim">
-                    <button>entrar</button>
-                    <div class="aux-conta">
+                    <button onclick="login()">entrar</button>
+                    <div class="aux-conta bg-red-500">
                         <p>Não tem um conta?</p>
                         <a href="">Cadastre-se</a>
                     </div>
@@ -43,5 +46,7 @@
             </div>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
