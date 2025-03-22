@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -8,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-main">
         <div class="esquerda">
             <img src="imagens/sign-up-animate.svg" alt="">
         </div>
@@ -21,12 +23,12 @@
                     <div class="campo">
                         <label for="email">E-mail</label>
                         <input type="email" name="email" id="email">
-                        <p class="text-red-500 text-sm hidden">E-mail é obrigatório.</p>
+                        <p id="error-email" class="text-red-500 text-sm hidden">E-mail é obrigatório.</p>
                     </div>
                     <div class="campo">
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" id="senha">
-                        <p class="text-red-500 text-sm hidden">Senha é obrigatória.</p>
+                        <p id="error-password" class="text-red-500 text-sm hidden">Senha é obrigatória.</p>
                     </div>
                     <div class="links-ajuda">
                         <div class="inputs">
@@ -37,8 +39,8 @@
                     </div>
                 </div>
                 <div class="fim">
-                    <button onclick="login()">entrar</button>
-                    <div class="aux-conta bg-red-500">
+                    <button id="login-btn" onclick="login()">entrar</button>
+                    <div class="aux-conta">
                         <p>Não tem um conta?</p>
                         <a href="">Cadastre-se</a>
                     </div>
@@ -48,5 +50,6 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>

@@ -5,19 +5,19 @@ body {
     background-color: #BA68C8;
 }
 
-.container {
+.container-main {
     width: 100%;
     height: 100vh;
     display: flex;
 }
 
-.container .esquerda {
+.container-main .esquerda {
     width: 50%;
     height: 100%;
     background-color: #BA68C8;
 }
 
-.container .direita {
+.container-main .direita {
     width: 50%;
     height: 100%;
     background-color: white;
@@ -28,50 +28,50 @@ body {
     border-bottom-left-radius: 50px;
 }
 
-.container .direita .formulario .topo h1 {
+.container-main .direita .formulario .topo h1 {
     color: #BA68C8;
     text-transform: uppercase;
     text-align: center;
     font-size: 45px;
 }
 
-.container .direita .formulario .meio {
+.container-main .direita .formulario .meio {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.container .direita .formulario .meio .campo {
+.container-main .direita .formulario .meio .campo {
     display: flex;
     flex-direction: column;
 }
 
-.container .direita .formulario .meio .campo input {
+.container-main .direita .formulario .meio .campo input {
     border: none;
     background-color: #E3E3E3;
     padding: 10px;
     border-radius: 5px;
 }
 
-.container .direita .formulario .meio .campo label {
+.container-main .direita .formulario .meio .campo label {
     font-weight: bold;
 }
 
-.container .direita .formulario {
+.container-main .direita .formulario {
     width: 60%;
 }
 
-.container .direita .formulario .meio .links-ajuda {
+.container-main .direita .formulario .meio .links-ajuda {
     display: flex;
     justify-content: space-between;
 }
 
-.container .direita .formulario .fim {
+.container-main .direita .formulario .fim {
     width: 100%;
     margin-top: 20px;
 }
 
-.container .direita .formulario .fim button {
+.container-main .direita .formulario .fim button {
     width: 100%;
     padding: 10px 0;
     border: none;
@@ -83,7 +83,7 @@ body {
     cursor: pointer;
 }
 
-.container .direita .formulario .fim .aux-conta {
+.container-main .direita .formulario .fim .aux-conta {
     display: flex;
     align-items: center;
     gap: 5px;
