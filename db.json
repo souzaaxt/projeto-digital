@@ -1,0 +1,29 @@
+{
+  "accounts": [
+    {
+      "id": "1",
+      "email": "gabriel@email.com",
+      "password": "123456"
+    },
+    {
+      "id": "0d98",
+      "email": "hjbhjb",
+      "password": "bhjbhjbjh"
+    },
+    {
+      "id": "4b7b",
+      "email": "hjhg",
+      "password": "jgjgh"
+    },
+    {
+      "id": "469c",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "dcdc",
+      "email": "gabriel@pontogo.com.br",
+      "password": "123456"
+    }
+  ]
+}

@@ -38,18 +38,21 @@
                     </div>
                     <div class="campo">
                         <i class="fa-regular fa-envelope"></i>
-                        <input type="email" placeholder="Email">
+                        <input id="email" type="email" placeholder="Email">
                     </div>
                     <div class="campo">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Password">
+                        <input id="password" type="password" placeholder="Password">
                     </div>
                 </div>
                 <div class="fim">
-                    <button>SIGN UP</button>
+                    <button type="button" onclick="register(event)">SIGN UP</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.4/axios.min.js" integrity="sha512-2A1+/TAny5loNGk3RBbk11FwoKXYOMfAK6R7r4CpQH7Luz4pezqEGcfphoNzB7SM4dixUoJsKkBsB6kg+dNE2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 </html>
